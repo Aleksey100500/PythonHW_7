@@ -1,6 +1,9 @@
 def get_complex_numbers():
     while True:
         a = input('Enter real part: ')
+        if a == 0:
+            print('Its zero try again.')
+            get_complex_numbers()
         if not a.isdigit():
             print('Try again.')
             continue
@@ -8,6 +11,9 @@ def get_complex_numbers():
         break
     while True:
         b = input('Enter imaginary number: ')
+        if b == 0:
+            print('Its zero try again.')
+            get_complex_numbers()
         if not b.isdigit():
             print('Try again.')
             continue
