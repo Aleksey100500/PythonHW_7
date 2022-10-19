@@ -1,7 +1,9 @@
+import logg as lg
 def get_complex_numbers():
     while True:
         a = input('Enter real part: ')
         if a == 0:
+            lg.error_zero()
             print('Its zero try again.')
             get_complex_numbers()
         if not a.isdigit():
@@ -12,6 +14,7 @@ def get_complex_numbers():
     while True:
         b = input('Enter imaginary number: ')
         if b == 0:
+            lg.error_zero()
             print('Its zero try again.')
             get_complex_numbers()
         if not b.isdigit():
