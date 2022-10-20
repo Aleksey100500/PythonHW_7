@@ -13,14 +13,9 @@ def user_interfase_tel():
         write_its.logs_csv(surname, name, tel, dis)
     elif number == 2:
         write_its.logs_json(surname, name, tel, dis)
-    micro_lib = {
-        '1': f"{write_its.logs_csv(surname, name, tel, dis)}",
-        '2': f"{write_its.logs_json(surname, name, tel, dis)}",
-        '3': f"{write_its.logs_xml(surname, name, tel, dis)}"
-    }
-    micro_lib.get[number]
-
-    
+    elif number == 3:
+        write_its.logs_xml(surname, name, tel, dis)
+    user_interfase_tel()
     
     
 def user_surnames():
