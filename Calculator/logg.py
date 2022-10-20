@@ -44,7 +44,7 @@ def sqrt_log(r1, result):
 def error_enter():
     time_calc = datetime.now().strftime('%H:%M')
     with open('log.csv', 'a') as log_file:
-        log_file.write('{} Time {}\n'.format('Error.', time_calc))
+        log_file.write('{} Time {}\n'.format('Syntax error.', time_calc))
 
 def error_zero():
     time_calc = datetime.now().strftime('%H:%M')
