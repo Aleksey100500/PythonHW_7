@@ -10,11 +10,11 @@ def user_interfase_tel():
     if number == 0:
         sys.exit('End.')
     elif number == 1:
-        write_its.logs_csv(surname, name, tel, dis)
+        print(write_its.logs_csv(surname, name, tel, dis))
     elif number == 2:
-        write_its.logs_json(surname, name, tel, dis)
+        print(write_its.logs_json(surname, name, tel, dis))
     elif number == 3:
-        write_its.logs_xml(surname, name, tel, dis)
+        print(write_its.logs_xml(surname, name, tel, dis))
     user_interfase_tel()
     
     
